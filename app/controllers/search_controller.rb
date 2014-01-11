@@ -24,7 +24,7 @@ class SearchController < ApplicationController
 	  	# @doc=@doc.css('i')[0].content
 	  	# # if @doc
 	  	# @doc="Did You Mean :- " + @doc
-		  end
+		  #end
 		# end
 	  else
 	  	@query=[]
