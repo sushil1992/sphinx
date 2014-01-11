@@ -18,8 +18,6 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -28,11 +26,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 
-gem 'thinking-sphinx'
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
@@ -46,3 +40,21 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'thinking-sphinx'
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
+
+gem 'simple_form'
+gem "httparty"
+gem "pry"
+#gem "open-uri"
+#gem 'rubygems'
+gem 'nokogiri'
+#gem 'rails3-jquery-autocomplete'
+gem 'nifty-generators'
+
+# Use jquery as the JavaScript library
+gem "jquery-rails", "~> 2.3.0"
+gem 'rails3-jquery-autocomplete', git: 'https://github.com/francisd/rails3-jquery-autocomplete'

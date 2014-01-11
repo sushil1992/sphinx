@@ -1,0 +1,59 @@
+
+<html>
+	<body>
+		<!-- <h1> It is working </h1>
+		<%= form_for :search, url: search_index_path  do |f| %>
+    	<p>
+		    <%= f.label :query %><br>
+		    <%= f.text_field :query %>
+		  </p>
+		  <p>
+		    <%= f.submit %>
+		  </p>
+		<% end %>
+		<% if @requ %>
+		<%= @requ %>
+		<% end %> -->
+
+<!-- 	<%= form_tag search_index_path, :method => 'get' do %>
+  	<p>
+    	<%= text_field_tag :search, params[:search] %>
+    	<%= submit_tag "Search", :name => nil %>
+  	</p>
+	<% end %>
+
+	<% @query.each do |items| %>
+					<%= items.title %><br/>
+					<%= items.category %><br/>
+					<%= items.director %><br/>
+					<%= items.cast %><br/>
+					<%= items.genre %><br/>
+	<% end %> 
+	<%= 
+	if @doc
+	
+	link_to raw(@doc),:controller=> "search",:action=>"index",:rightspell=> "#{@doc}",:name=>nil
+	end
+	 %>
+
+
+
+ -->
+
+ <p>
+  <%= f.label :title %>
+  <%= text_field_with_auto_complete :movie, :title, { :size => 15 }, { :url => , :method => :get, :param_name => 'search' } %>
+</p>
+
+	<% @query.each do |items| %>
+					<%= items.title %><br/>
+					<%= items.category %><br/>
+					<%= items.director %><br/>
+					<%= items.cast %><br/>
+					<%= items.genre %><br/>
+	<% end %> 
+	<%= 
+	
+	
+	</body>
+</html>
